@@ -8,20 +8,34 @@
 
 /* Left-align the list items */
 li {
-	text-align: left;
+	display: flex;
+	align-items: flex-start;
 	padding-left: 20px;
 	margin-bottom: 10px;
 }
 
-/* Keep timestamp links to the left of paragraphs and outdented */
-li a {
-	float: left;
+/* Style the buttons */
+li button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 	margin-right: 10px;
-	margin-left: -20px;
+	cursor: pointer;
 }
 
-li p {
-	margin-left: 30px;
+li button:hover {
+	opacity: 0.8;
+}
+
+/* Indent the paragraphs */
+li .text p {
+	margin-left: 10px;
+	margin-top: 0;
 }
 
 /* Remove bullet middot from the list */
