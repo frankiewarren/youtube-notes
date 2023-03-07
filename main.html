@@ -3,16 +3,19 @@
 <head>
 	<title>Fortnite Strategy</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Load the YouTube Player API JavaScript file -->
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<!-- Load the custom script file -->
+	<script src="script.js"></script>
 </head>
 <body>
 	<!-- Embed YouTube video full width -->
-	<iframe width="100%" height="500px" src="https://www.youtube.com/embed/ePWsO1aczzk" frameborder="0" allowfullscreen></iframe>
-
+	<div id="player"></div>
 	<!-- Create a container div for the list items and center it -->
 	<div class="container">
 		<ul>
 			<li id="build">
-				<button>[0:00]</button>
+				<button onclick="seekTo(0)">[0:00]</button>
 				<div class="text">
 					<p>Always build walls and ramps for protection and mobility.</p>
 					<p>When under fire, try to build quickly to create cover.</p>
@@ -20,7 +23,7 @@
 				</div>
 			</li>
 			<li id="land">
-				<button>[1:23]</button>
+				<button onclick="seekTo(83)">[1:23]</button>
 				<div class="text">
 					<p>Try to land in a less populated area to loot up and avoid early game fights.</p>
 					<p>Check the map and look for areas with few named locations.</p>
@@ -28,7 +31,7 @@
 				</div>
 			</li>
 			<li id="storm">
-				<button>[3:15]</button>
+				<button onclick="seekTo(195)">[3:15]</button>
 				<div class="text">
 					<p>Keep an eye on the storm and plan your rotations accordingly.</p>
 					<p>Check the map regularly to see where the storm is moving and plan your route accordingly.</p>
@@ -36,7 +39,7 @@
 				</div>
 			</li>
 			<li id="sound">
-				<button>[5:02]</button>
+				<button onclick="seekTo(302)">[5:02]</button>
 				<div class="text">
 					<p>Use headphones to listen for footsteps and gunshots.</p>
 					<p>Pay attention to the direction of the sounds to help locate opponents.</p>
@@ -44,7 +47,7 @@
 				</div>
 			</li>
 			<li id="loadout">
-				<button>[7:09]</button>
+				<button onclick="seekTo(429)">[7:09]</button>
 				<div class="text">
 					<p>Experiment with different weapon combinations to find your preferred loadout.</p>
 					<p>Consider carrying a mix of weapons for different ranges and situations.</p>
@@ -53,5 +56,6 @@
 			</li>
 		</ul>
 	</div>
+
 </body>
 </html>
