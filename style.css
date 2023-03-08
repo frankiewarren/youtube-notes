@@ -38,6 +38,7 @@ li button:hover {
 li .text p {
 	margin-left: 10px;
 	margin-top: 0;
+	font-size: 16px;
 }
 
 /* Remove bullet middot from the list */
@@ -46,3 +47,8 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+@media (max-width: 768px) {
+	li .text p {
+		font-size: 22px;
+	}
