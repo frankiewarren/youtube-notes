@@ -48,6 +48,10 @@ ul {
 	padding: 0;
 }
 
+li[data-timestamp-passed="true"] {
+	display: none;
+  }  
+
 @media (max-width: 768px) {
 	li .text p {
 		font-size: 22px;
